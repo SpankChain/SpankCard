@@ -1,0 +1,49 @@
+{
+  "name": "ethereumjs-wallet",
+  "version": "0.6.0",
+  "description": "Utilities for handling Ethereum keys",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover _mocha",
+    "coveralls": "npm run coverage && coveralls <coverage/lcov.info",
+    "lint": "standard",
+    "prepublish": "npm run lint && npm run test",
+    "test": "mocha ./test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethereumjs/ethereumjs-wallet.git"
+  },
+  "keywords": [
+    "ethereum",
+    "wallets",
+    "keys"
+  ],
+  "author": "Alex Beregszaszi <alex@rtfs.hu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethereumjs/ethereumjs-wallet/issues"
+  },
+  "homepage": "https://github.com/ethereumjs/ethereumjs-wallet",
+  "dependencies": {
+    "aes-js": "^0.2.3",
+    "bs58check": "^1.0.8",
+    "ethereumjs-util": "^4.4.0",
+    "hdkey": "^0.7.0",
+    "scrypt.js": "^0.2.0",
+    "uuid": "^2.0.1",
+    "utf8": "^2.1.1"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
+    "standard": "^5.4.1"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  }
+}

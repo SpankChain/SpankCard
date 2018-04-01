@@ -1,0 +1,24 @@
+body, * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: gt-haptik, 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+
+h1, h2 {
+    margin: 0 !important;
+}
+
+a {
+    color: #00AEEF !important;
+    cursor: pointer;
+}
+
+input {
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgba(34,36,38,.15) !important;
+    box-shadow: none !important;
+    padding: 10px 0 !important;
+    text-transform: capitalize !important;
+}

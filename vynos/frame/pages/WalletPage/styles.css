@@ -1,0 +1,586 @@
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.walletWrapper {
+  width: 36rem;
+  z-index: 200;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 8px 8px 0px;
+  overflow: hidden;
+}
+
+.walletContentContainer {
+  position: relative;
+  z-index: 200;
+}
+
+.walletCard {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2rem 4rem;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  z-index: 200;
+}
+
+.walletSpankCardWrapper {
+  display: flex;
+  height: 100%;
+  flex-flow: column nowrap;
+  position: relative;
+  z-index: 200;
+}
+
+.walletRow {
+  display: flex;
+  align-items: stretch;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding: 1rem 2rem;
+  background-color: #f8f8f8;
+}
+
+.walletRowBalanceWrapper {
+  display: flex;
+  flex: 1 0 auto;
+  padding: 0 .8rem;
+}
+
+.walletRowAction {
+  flex: 0 0 auto;
+}
+
+.walletRowAction button {
+  padding: .4rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.activityFinneySign {
+  border-color: #cccccc;
+}
+
+.spankCardCtaContent {
+  padding: .2rem 1rem !important;
+}
+
+.spankCardCtaContent:hover {
+  box-shadow: 0 0 0 3px #ff3b81;
+}
+
+.spankCardCtaContent:hover .ctaDivider {
+  opacity: 0 !important;
+}
+
+.spankCardCtaInputValue {
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.ctaText {
+  font-size: .8rem !important;
+}
+
+.walletSpankCard::before {
+  filter: invert(100%);
+  opacity: .15;
+}
+
+.walletSpankCardContent {
+  padding: 2rem 3rem;
+}
+
+.walletSpankCardError {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ff3b80;
+}
+
+.walletSpankCardDetails {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.walletSpankCardView {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.walletSpankCardActions {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 auto;
+  padding-left: 1rem;
+}
+
+.walletSpankCardActions button:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.walletSpankCardActions button {
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.walletFunds {
+  border-radius: 5.5px;
+  background-color: #f8f8f8;
+  flex: 0 0 45%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.walletFundsHeader {
+  font-family: gt-haptik;
+  font-size: .8rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.1px;
+  flex: 0 0 auto;
+  align-self: center;
+  margin-bottom: .3rem;
+}
+
+.walletBalance {
+  border-radius: 1rem;
+  border: solid 0.7px #b5b5b5;
+  width: 70%;
+  font-family: CartographMonoCF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #797979;
+  padding: .3rem;
+}
+
+.walletRowBalance {
+  font-family: CartographMonoCF;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #b5b5b5;
+  line-height: 1.35;
+}
+
+.walletActions {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 0 45%;
+  justify-content: center;
+}
+
+.walletActions button {
+  font-family: gt-haptik;
+  margin: .2rem 0;
+  flex: 0 0 auto;
+  font-weight: 500;
+  font-size: .8rem;
+  padding: .35rem;
+}
+
+.walletDescriptionWrapper {
+  background-color: #f0f0f0;
+  padding: 2rem 4rem;
+}
+
+.walletDescriptionHeader {
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: 0.2px;
+  color: #797979;
+}
+
+.walletDescription {
+  font-size: 0.9rem;
+  color: #797979;
+  line-height: normal;
+}
+
+.walletQRHeader {
+  display: block;
+  font-size: 0.7rem;
+  color: #797979;
+  line-height: normal;
+}
+
+.walletQR {
+  display: flex;
+  margin-left: auto;
+}
+
+.walletAddressWrapper {
+  margin: 1.1rem 0;
+}
+
+.ctaDivider {
+  transition: opacity 200ms ease-in-out;
+  width: 1px;
+  border-left: 1px solid rgba(181, 181, 181, 0.4);
+  height: 1rem;
+  position: relative;
+  right: 1rem;
+  opacity: 1;
+  top: 0;
+}
+
+.walletActivityWrapper {
+  background: #f0f0f0;
+  padding: 2.5rem 0;
+  max-height: 17rem;
+  overflow-y: auto;
+}
+
+.walletActivityHeaderRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.3rem;
+  padding: 0 2.5rem;
+}
+
+.walletActivityHeaderRow:first-child:last-child {
+  margin-bottom: 0;
+}
+
+.walletActivityHeader {
+  font-family: gt-haptik;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #797979;
+}
+
+.walletActivityMiniHeader {
+  font-family: CartographMonoCF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #797979;
+}
+
+.walletActivityErrorHeader {
+  color: #ff3b80;
+}
+
+.walletAmountWrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.walletAmount {
+  font-family: CartographMonoCF;
+  color: #797979;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 3rem;
+  border: 0.5px solid #cccccc;
+  padding: 0.4rem 0.5rem;
+}
+
+.walletEqual {
+  margin: 0 0.4rem;
+}
+
+.walletEqual, .walletConverted {
+  font-weight: 500;
+  color: #797979;
+}
+
+.walletConverted {
+  font-family: CartographMonoCF;
+  font-size: 1rem;
+}
+
+.walletActivityTable {
+  border-collapse: collapse;
+  border: none;
+  background: #f0f0f0;
+  width: 100%;
+}
+
+.walletActivityTable th,
+.walletActivityTable td,
+.walletActivityTable td div {
+  font-family: CartographMonoCF;
+}
+
+.walletActivityTableHeader {
+  border-bottom: 0.5px solid #e5e5e5;
+}
+
+.walletActivityHeaderCell {
+  font-size: 0.6rem;
+  color: #b5b5b5;
+  font-weight: 600;
+}
+
+.walletActivityEntry td {
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.walletActivityDate {
+  padding-left: 2.5rem;
+}
+
+.walletActivityTime {
+  padding: 0 2rem;
+}
+
+.walletActivityDetails .walletActivityPrice {
+  padding: 0.5rem 0 0.5rem 3rem;
+}
+
+.walletActivityDetails .walletActivityPrice {
+  padding: 0.5rem 0 0.5rem 3rem;
+}
+
+.walletActivityEntryFirst .walletActivityPrice {
+  padding-top: 1.5rem;
+}
+
+.walletActivityEntryFirst .walletActivityItemDescription,
+.walletActivityEntryFirst .walletActivityTime {
+  padding-top: 1rem;
+}
+
+.walletActivityEntryLast .walletActivityPrice {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.walletActivityEntryLast .walletActivityItemDescription,
+.walletActivityEntryLast .walletActivityTime {
+  vertical-align: top;
+  padding-top: 1rem;
+}
+
+.walletActivityEntryLast .walletActivityItem {
+  padding: 0;
+}
+
+.walletActivityEntryToggled {
+  background: white !important;
+}
+
+.walletActivityEntrySingle td {
+  padding-bottom: 1rem;
+}
+
+.walletActivityPrice {
+  padding: 1.5rem 0 1.5rem 3rem;
+  text-align: right;
+}
+
+.walletActivityMonth {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #b5b5b5;
+  text-align: center;
+}
+
+.walletActivityDay {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #797979;
+  text-align: center;
+}
+
+.walletActivityStart,
+.walletActivityEnd,
+.walletActivityTimeSeparator {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #797979;
+}
+
+.walletActivityEnd {
+  display: block;
+}
+
+.walletActivityItem,
+.walletActivityDescription {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.walletActivityItem {
+  color: #797979;
+}
+
+.walletActivityDescription {
+  color: #b5b5b5;
+}
+
+.walletActivitySubtract,
+.walletActivitySubtractAmount,
+.walletActivitySendAmount {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #d0021b;
+  display: inline-block;
+}
+
+.walletActivitySubtractAmount {
+  border-radius: 1rem;
+  border: 0.5px solid #cccccc;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.3rem;
+  margin-left: 0.3rem;
+}
+
+.walletActivityReceiveAmount {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2ae585;
+}
+
+.walletActivityAction {
+  padding-left: 2rem;
+  padding-right: 2.5rem;
+}
+
+.walletActivityMore,
+.walletActivityLess {
+  border-radius: 3rem;
+  border: 0.5px solid #cccccc;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+}
+
+.walletActivityMore {
+  color: #797979;
+  line-height: 1.1rem;
+  letter-spacing: -0.4rem;
+  text-align: center;
+  text-indent: -0.4rem;
+}
+
+.walletActivityLess {
+  color: #797979;
+  font-weight: 600;
+  border: 0.5px solid #cccccc;
+  line-height: 1.5rem;
+}
+
+.walletActivityMore:hover {
+  cursor: pointer;
+}
+
+.walletActivityMoreToggled {
+  text-indent: -9999px;
+  background-image: url('../../styles/images/close-button-dark.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 9px;
+}
+
+.selected {
+  background-color: #ffffff;
+}
+
+.selected.walletActivityDetails .walletActivityPrice {
+  padding: 0.3rem 0 0.3rem 3rem;
+}
+
+.selected.first.walletActivityDetails .walletActivityPrice,
+.selected.first.walletActivityDetails .walletActivityTime,
+.selected.first.walletActivityDetails .walletActivityItemDescription {
+  padding-top: 1rem;
+}
+
+.selected.last.walletActivityDetails .walletActivityPrice,
+.selected.last.walletActivityDetails .walletActivityTime,
+.selected.last.walletActivityDetails .walletActivityItemDescription {
+  padding-bottom: 1rem;
+}
+
+.pendingAmount {
+  margin-left: 0.3rem;
+}
+
+.pendingAmount, .pendingAmount .currency {
+  color: #B5B5B5;
+}
+
+.sendReceiveCurrency {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.finneyUnit {
+  margin-left: 0;
+  margin-top: 0;
+  border-color: #b5b5b5;
+  margin-bottom: .05rem;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .walletWrapper {
+    width: 100vw;
+  }
+
+  .walletCard {
+    padding: 2rem;
+  }
+
+  .walletRow {
+    padding: 1rem;
+  }
+
+  .walletRowAction button {
+    min-width: 0;
+    padding: .4rem 1rem;
+  }
+
+  .spankCardCta {
+    padding-left: 1rem !important;
+  }
+
+  .spankCardCtaContent {
+    padding: .3rem 1rem !important;
+    margin-left: .5rem !important;
+  }
+
+  .ctaDivider {
+    right: 1rem !important;
+  }
+
+  .walletSpankCard {
+    height: 140px !important;
+    width: 233.33px !important;
+  }
+
+  .walletSpankCardDetails {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .walletSpankCardView {
+    margin-bottom: 2rem;
+  }
+
+  .walletSpankCardActions button {
+    padding: .25rem 2rem;
+  }
+}

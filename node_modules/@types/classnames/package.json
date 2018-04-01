@@ -1,0 +1,41 @@
+{
+    "name": "@types/classnames",
+    "version": "2.2.3",
+    "description": "TypeScript definitions for classnames",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Dave Keen",
+            "url": "http://www.keendevelopment.ch"
+        },
+        {
+            "name": "Adi Dahiya",
+            "url": "https://github.com/adidahiya"
+        },
+        {
+            "name": "Jason Killian",
+            "url": "https://github.com/JKillian"
+        },
+        {
+            "name": "Sean Kelley",
+            "url": "https://github.com/seansfkelley"
+        },
+        {
+            "name": "Michal Adamczyk",
+            "url": "https://github.com/mradamczyk"
+        },
+        {
+            "name": "Marvin Hagemeister",
+            "url": "https://github.com/marvinhagemeister"
+        }
+    ],
+    "main": "",
+    "repository": {
+        "type": "git",
+        "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "7490b16060479754c4a2467a6ee046a311d2c5a167c41c374e4fc107c22c7b73",
+    "typeScriptVersion": "2.3"
+}

@@ -1,0 +1,45 @@
+{
+    "name": "@types/body-parser",
+    "version": "1.16.8",
+    "description": "TypeScript definitions for body-parser",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Santi Albo",
+            "url": "https://github.com/santialbo",
+            "githubUsername": "santialbo"
+        },
+        {
+            "name": "Vilic Vane",
+            "url": "https://github.com/vilic",
+            "githubUsername": "vilic"
+        },
+        {
+            "name": "Jonathan Häberle",
+            "url": "https://github.com/dreampulse",
+            "githubUsername": "dreampulse"
+        },
+        {
+            "name": "Gevik Babakhani",
+            "url": "https://github.com/blendsdk",
+            "githubUsername": "blendsdk"
+        },
+        {
+            "name": "Tomasz Łaziuk",
+            "url": "https://github.com/tlaziuk",
+            "githubUsername": "tlaziuk"
+        }
+    ],
+    "main": "",
+    "repository": {
+        "type": "git",
+        "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/express": "*",
+        "@types/node": "*"
+    },
+    "typesPublisherContentHash": "e6976d18d37cd52405268dffcc70ad439e26bfb564395f871130687a24d073fa",
+    "typeScriptVersion": "2.2"
+}

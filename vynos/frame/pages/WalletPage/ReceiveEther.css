@@ -1,0 +1,137 @@
+.walletQR {
+  padding: 2rem 0;
+  width: 10rem;
+  height: 10rem;
+  align-self: flex-end;
+}
+
+.container {
+  background-color: #f0f0f0;
+}
+
+.header {
+  padding: 2rem 3rem;
+  font-family: gt-haptik;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #797979;
+}
+
+.descriptionWrapper {
+  padding: 0 3rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #797979;
+  font-weight: 500;
+}
+
+.seeTutorialText {
+  font-size: 1.1rem;
+  color: #797979;
+  font-weight: 500;
+  margin-left: .2rem;
+}
+
+.addressWrapper {
+  padding: 2rem;
+}
+
+.ctaInput {
+  border: 0 !important;
+  box-shadow: 0 0 0px 2px #e4e4e4;
+}
+
+.ctaInputValue {
+  font-size: 1rem;
+  font-family: CartographMonoCF;
+  font-weight: 500;
+
+}
+
+.ctaInputContent {
+  padding: .65rem !important;
+  width: 4rem;
+  box-shadow: 0 0 0 4px #ff3b81;
+}
+
+.ctaInputContent:hover {
+  background-color: rgba(255, 59, 129, 0.9) !important;
+}
+
+.ctaInputContent:active {
+  background-color: rgb(255, 59, 129) !important;
+}
+
+.ctaContentWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.ctaIcon {
+  background-image: url(../../styles/images/copy-white.svg);
+  height: 1rem;
+  width: 1rem;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center 2px;
+  margin: 0 4px;
+}
+
+.ctaText {
+  font-weight: 600;
+  position: relative;
+  top: 1px;
+}
+
+.qrWrapper {
+  padding: 0 3rem;
+  font-size: 1rem;
+  color: #797979;
+  font-weight: 500;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.qrDescription {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .header {
+    padding: 2rem;
+  }
+
+  .descriptionWrapper {
+    padding: 0 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .qrWrapper {
+    padding: 0 2rem;
+  }
+
+  .ctaInputValue {
+    flex: 1 1 auto;
+    width: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 2.5rem;
+    align-items: center;
+  }
+
+  .walletQR {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+

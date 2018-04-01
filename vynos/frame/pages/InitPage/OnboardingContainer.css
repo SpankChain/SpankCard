@@ -1,0 +1,67 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #ff3b81;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 0 0 auto;
+}
+
+.headerText {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.progressDots {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.line {
+  background-image: url(../../styles/images/line.svg);
+  height: 1rem;
+  width: 3.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .25;
+  margin: 0 .25rem;
+}
+
+.activeLine {
+  opacity: 1;
+}
+
+.dot {
+  background-image: url(../../styles/images/dot.svg);
+  height: .5rem;
+  width: .5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .25;
+}
+
+.activeDot {
+  opacity: 1;
+}
+
+
+.funnelWalletCard {
+  margin: 2rem auto;
+  flex: 0 0 auto;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+}

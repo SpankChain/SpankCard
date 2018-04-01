@@ -1,0 +1,42 @@
+{
+  "name": "matchdep",
+  "description": "Use globule to filter npm module dependencies by name.",
+  "version": "1.0.1",
+  "homepage": "https://github.com/tkellen/node-matchdep",
+  "author": {
+    "name": "Tyler Kellen",
+    "url": "http://goingslowly.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tkellen/node-matchdep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tkellen/node-matchdep/issues"
+  },
+  "license": "MIT",
+  "main": "lib/matchdep",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+    "findup-sync": "~0.3.0",
+    "micromatch": "^2.3.7",
+    "resolve": "~1.1.6",
+    "stack-trace": "0.0.9"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.11.3",
+    "grunt-contrib-nodeunit": "~0.4.1"
+  },
+  "keywords": [
+    "package.json",
+    "dependencies",
+    "devDependencies",
+    "peerDependencies"
+  ]
+}

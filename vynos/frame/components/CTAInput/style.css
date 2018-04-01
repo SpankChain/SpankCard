@@ -1,0 +1,92 @@
+.ctaInput {
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  align-items: stretch;
+  color: #fff;
+  padding-left: 1rem;
+}
+
+.ctaInputValue {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.ctaInputText {
+  padding: .5rem 4rem;
+  background: #fff;
+  color: #ff3b81;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 600;
+  user-select: none;
+  margin: 2px 3px 2px 0;
+}
+
+.ctaInputText span {
+  font-size: 0.7rem;
+}
+
+.ctaInput.inverse {
+  display: flex;
+  flex-flow: row nowrap;
+  border: 0.5px solid #e4e4e4;
+  border-radius: 2rem;
+  align-items: stretch;
+  color: #797979;
+  font-family: CartographMonoCF;
+  font-size: 0.7rem;
+  padding-left: 1rem;
+}
+
+.ctaInput.inverse .ctaInputText {
+  padding: .2rem 2rem;
+  background: #ff3b81;
+  color: #fff;
+  border-radius: 2rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.ctaInput.inverse .ctaInputText div {
+  display: flex;
+}
+
+.ctaInput.inverse .ctaInputText span {
+  font-size: 0.7rem;
+}
+
+.ctaInput.connected {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #b5b5b5;
+  padding-left: 2rem;
+}
+
+.ctaInput.connected .ctaInputText {
+  transition: 200ms ease-in-out;
+  background: transparent;
+  color: #b5b5b5;
+  padding-left: 2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.ctaInput.connected .ctaInputText:hover {
+  transition: 200ms ease-in-out;
+  background-color: #ff3b81;
+  color: #fff;
+  border-radius: 2rem;
+}
+
+.ctaInput.connected .ctaInputText span {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}

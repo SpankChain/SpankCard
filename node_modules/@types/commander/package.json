@@ -1,0 +1,14 @@
+{
+    "name": "@types/commander",
+    "version": "2.12.2",
+    "typings": null,
+    "description": "Stub TypeScript definitions entry for commander, which provides its own types definitions",
+    "main": "",
+    "scripts": {},
+    "author": "",
+    "repository": "https://github.com/tj/commander.js",
+    "license": "MIT",
+    "dependencies": {
+        "commander": "*"
+    }
+}

@@ -1,0 +1,37 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+            'build',
+            '--build-arg', 'NODE_ENV=${_ENV}',
+            '--build-arg', 'FRAME_URL=${_FRAME_URL}',
+            '-t', 'gcr.io/$PROJECT_ID/$REPO_NAME/${_PROJECT}/${_ENV}:$COMMIT_SHA',
+            #'-t', 'gcr.io/$PROJECT_ID/$REPO_NAME/${_PROJECT}/${_ENV}:latest',
+            '.'
+          ]
+    dir: '${_PROJECT}'
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/${_PROJECT}/${_ENV}:$COMMIT_SHA"]
+  - name: 'gcr.io/$PROJECT_ID/cloud-build-helm:2.8.2'
+    args: ['dependency', 'build']
+    dir: '${_PROJECT}/infrastructure/helm'
+    env:  [
+            'CLOUDSDK_COMPUTE_ZONE=${_ZONE}',
+            'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER}'
+          ]
+  - name: 'gcr.io/$PROJECT_ID/cloud-build-helm:2.8.2'
+    args: [
+      'upgrade',
+      '${_HELM_RELEASE}',
+      'helm',
+      '--install',
+      '-f', 'helm-values-${_ENV}.yaml',
+      '--set', 'image.tag=$COMMIT_SHA,image.env=${_ENV}'
+    ]
+    dir: '${_PROJECT}/infrastructure'
+    env:  [
+            'CLOUDSDK_COMPUTE_ZONE=${_ZONE}',
+            'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER}'
+          ]
+images: [
+          'gcr.io/$PROJECT_ID/$REPO_NAME/${_PROJECT}/${_ENV}:$COMMIT_SHA',
+        ]

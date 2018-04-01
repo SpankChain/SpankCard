@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="752 1023 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#pattern);
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 50 50">
+      <image width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABKElEQVRoQ+2ZQQ5CIQxEy1bvpXfwfnoHD+Yaw/ZbkkeG4A8Zd5oC7XSGtlhqrTUOn+v9dfwp/f55P5AdNVLOLQ4kIpyRDtdMrYgol9vzR+wZZShaVNjUjvriQCiiqp0z0hCkKKhok/XUF2uEoDnDxhmxRmbwKNkDUyvrfqlPs6u90oSmbbwDoQh07JyR1v1urZFMxDTt9AJQ9svW4pldOTiThLKfA+lV+wxpU2vgQQJTSykHszNCfZGu3xXUciAUgZ6dqSUiiGd2RQ/UR6VIOpCGMtWDMzJQJPehFp1HaGtP6UYfFegFgCu7AxmYzylY2ZbOiPoiuUQjswVLR13lXDyzr3DGgfTetRRk/rV2H2pl/7PTJu9MdmmvdSYHqS8OhCK1ym6bjHwBLR272tEUkfMAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <rect id="download_1_" data-name="download (1)" class="cls-1" width="50" height="50" rx="4" transform="translate(752 1023)"/>
+</svg>

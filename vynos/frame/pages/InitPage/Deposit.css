@@ -1,0 +1,26 @@
+.ctaInputValue {
+  padding: 0 1rem;
+  font-family: CartographMonoCF;
+  line-height: 1rem;
+}
+
+.ctaInputContent {
+  box-shadow: 0 0 0 1px #fff;
+  margin: 0;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .ctaInputValue {
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    line-height: 2rem;
+  }
+
+  .ctaInputContent {
+    padding: .5rem 2rem;
+  }
+}

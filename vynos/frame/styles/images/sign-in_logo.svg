@@ -1,0 +1,20 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                    <style type="text/css">
+                    .st0{fill:#D04071;}
+                    </style>
+                    <g transform="rotate(0 50 50)">
+                        <path class="st0" d="M100,40L100,40c3.3,0,6,2.7,6,6v28c0,3.3-2.7,6-6,6l0,0c-3.3,0-6-2.7-6-6V46C94,42.7,96.7,40,100,40z	">
+                    </path>
+                    </g>
+                    <g transform="rotate(120 50 50)">
+                        <path class="st0" d="M68.3-78.3L68.3-78.3c3.3,0,6,2.7,6,6v28c0,3.3-2.7,6-6,6l0,0c-3.3,0-6-2.7-6-6l0-28
+                            C62.3-75.6,65-78.3,68.3-78.3z	">
+                        </path>
+                    </g>
+                    <g transform="rotate(240 50 50)">
+                        <path class="st0" d="M-18.3,8.3L-18.3,8.3c3.3,0,6,2.7,6,6l0,28c0,3.3-2.7,6-6,6l0,0c-3.3,0-6-2.7-6-6l0-28
+                        C-24.3,11-21.6,8.3-18.3,8.3z	">
+                        </path>
+                    </g>
+                </svg>

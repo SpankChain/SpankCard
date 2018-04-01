@@ -1,0 +1,116 @@
+.btn {
+  transition: 200ms ease-in-out;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  min-width: 8rem;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  font-family: gt-haptik;
+}
+
+.btn[disabled] {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.primary,
+.primary[disabled]:hover {
+  background-color: rgb(255, 59, 129);
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: rgba(255, 59, 129, .85);
+}
+
+.primary:active {
+  background-color: rgb(255, 59, 129);
+}
+
+.secondary,
+.secondary[disabled]:hover {
+  background-color: transparent;
+  border-color: rgb(224, 224, 224);
+  color: rgb(115, 115, 115);
+}
+
+.secondary:hover {
+  background-color: rgba(0, 0, 0, .05);
+  border-color: rgba(224, 224, 224, .85);
+  color: rgba(115, 115, 115, .85);
+}
+
+.secondary:active {
+  background-color: rgba(0, 0, 0, .1);
+  border-color: rgb(224, 224, 224);
+  color: rgb(115, 115, 115);
+}
+
+.primary.inverse {
+  color: rgb(255, 59, 129);
+  background-color: #fff;
+}
+
+.primary.inverse:hover {
+  background-color: rgba(255, 255, 255, .9);
+  color: rgb(255, 59, 129);
+}
+
+.primary.inverse:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 59, 129);
+}
+
+.secondary.inverse {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255) !important;
+}
+
+.secondary.inverse:hover {
+  color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .05);
+}
+
+.secondary.inverse:active {
+  color: rgb(255, 255, 255);
+}
+
+.tertiary,
+.tertiary[disabled]:hover {
+  background-color: rgb(204, 204, 204);
+  color: #fff;
+}
+
+.tertiary:hover {
+  background-color: rgba(204, 204, 204, .85);
+}
+
+.tertiary:active {
+  background-color: rgb(204, 204, 204);
+}
+
+.tertiary.inverse {
+  background-color: rgb(255, 255, 255);
+  color: rgb(204, 204, 204);
+}
+
+.tertiary.inverse:hover {
+  background-color: rgba(255, 255, 255, .85);
+}
+
+.tertiary.inverse:active {
+  background-color: rgb(255, 255, 255);
+}
+
+.mini {
+  padding: .25rem .5rem;
+  font-size: .7rem;
+}
+
+.dark {
+  background: #4A4A4A !important;
+  color: white !important;
+  opacity: 1 !important;
+}

@@ -1,0 +1,10 @@
+ingress:
+  enabled: true
+  hosts:
+    - vynos-staging.spankdev.com
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  tls:
+    - secretName: spankdev-ssl
+      hosts:
+        - vynos-staging.spankdev.com

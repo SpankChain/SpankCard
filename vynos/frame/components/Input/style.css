@@ -1,0 +1,43 @@
+.wrapper {
+  display: inline-flex;
+  flex-flow: column nowrap;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid #fff !important;
+  background-color: transparent;
+  color: #fff;
+  padding: .7rem 0;
+  outline: none;
+  font-size: .9rem;
+  font-family: monospace;
+}
+
+.input.error {
+  border-color: #ff0000;
+}
+
+.errorMessage {
+  color: #ff0000;
+  font-size: .7rem;
+  line-height: 1rem;
+  padding: .15rem 0;
+  height: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-family: CartographMonoCF, monospace;
+}
+
+.errorMessage.inverse {
+  color: white;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, .7);
+}
+
+.input[disabled] {
+  opacity: .7;
+  cursor: not-allowed;
+}

@@ -1,0 +1,22 @@
+.container {
+  padding: 3rem;
+  background-color: #f0f0f0;
+}
+
+.header {
+  font-family: gt-haptik;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #797979;
+}
+
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 2rem;
+}
+
+.footer button {
+  font-weight: 600;
+  font-size: 1.2rem;
+}

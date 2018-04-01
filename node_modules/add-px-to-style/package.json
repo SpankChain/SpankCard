@@ -1,0 +1,30 @@
+{
+  "name": "add-px-to-style",
+  "version": "1.0.0",
+  "description": "Will add px to the end of style values which are Numbers",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Mikko Haapoja",
+    "email": "me@mikkoh.com",
+    "url": "https://github.com/mikkoh"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.2.2"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "css,px,style,pixel,value"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikkoh/add-px-to-style.git"
+  },
+  "homepage": "https://github.com/mikkoh/add-px-to-style",
+  "bugs": {
+    "url": "https://github.com/mikkoh/add-px-to-style/issues"
+  }
+}

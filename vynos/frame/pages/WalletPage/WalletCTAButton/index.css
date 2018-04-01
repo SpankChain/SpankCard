@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0rem 4rem 2rem;
+  position: relative;
+  z-index: 200;
+}
+
+.container button {
+  background-color: #797979;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  flex: 1 0 auto;
+}
+
+.container button:hover {
+  color: white;
+  background-color: rgba(121, 121, 121, 0.9);
+}
+
+.container button:active {
+  color: white;
+  background-color: #797979;
+}

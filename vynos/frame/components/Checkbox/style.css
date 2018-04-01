@@ -1,0 +1,69 @@
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+/* On mouse-down, add a grey background color */
+.container:active input ~ .checkmark {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: .4rem;
+  height: .7rem;
+  border: solid #ff3b81;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg) scale(0.7);
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: white;
+  border-radius: 6px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 6px;
+    top: 2px;
+  }
+}
