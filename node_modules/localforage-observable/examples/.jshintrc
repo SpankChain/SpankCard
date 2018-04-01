@@ -1,6 +1,0 @@
-{
-    "globals": {
-      "console": true,
-      "window": true
-    }
-}
