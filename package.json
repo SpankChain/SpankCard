@@ -1,7 +1,7 @@
 {
   "name": "SpankCard",
   "version": "0.0.1",
-  "license": "Apache-2.0",
+  "license": "AGPL-3.0",
   "scripts": {
     "start": "gulp serve",
     "build": "gulp build",
